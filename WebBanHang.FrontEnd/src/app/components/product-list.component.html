@@ -1,4 +1,11 @@
 <h1>{{title}}</h1>
-<ul>
-  <li *ngFor="let sp of danhSachSanPham | async">{{sp.ten}}</li>
-</ul>
+
+<!--Nhấn Ctrl + F để format-->
+<table>
+  <tr *ngFor="let sp of products">
+    <td class="product-name">{{sp.ten}}</td>
+    <td>{{sp.gia}}đồng</td>
+    <td>{{sp.dienGiai}}</td>
+    <td><button>MUA NGAY</button></td>
+  </tr>
+</table>

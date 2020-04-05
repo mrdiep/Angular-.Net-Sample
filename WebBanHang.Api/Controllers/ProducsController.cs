@@ -39,6 +39,13 @@ namespace WebBanHang.Api.Controllers
                     Ten = "Áo Jean Size Trẻ em",
                     DienGiai  ="Áo màu đen, ông ngắn",
                     Gia = 30000
+                },
+                new ProductDto
+                {
+                    Id = 0,
+                    Ten = "Mũ Trùm đầu",
+                    DienGiai  ="Mũ màu đen",
+                    Gia = 40000
                 }
             };
         }

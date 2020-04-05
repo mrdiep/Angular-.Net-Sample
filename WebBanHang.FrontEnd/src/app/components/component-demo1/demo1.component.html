@@ -1,0 +1,19 @@
+{{Bien_kieu_chu}}
+<br/>
+{{Bien_kieu_data_object.ThuocTinh2}}
+<br/>
+{{Bien_kieu_data_object.DoiTuongCon.ThuocTinh_Con2}}
+
+<h1>{{title1}} - {{(products$ | async).length}} sản phẩm</h1>
+
+Cách số 1 - Chờ trên file HTML (await obserable trả về)
+<ul>
+  <li *ngFor="let sp of products$ | async">{{sp.ten}} - {{sp.gia}}đ</li>
+</ul>
+
+
+Cách số 2  - Chờ trên file TF (chỉ hiện dữ liệu trong khai báo)
+<h1>{{title2}}</h1>
+<ul>
+  <li *ngFor="let sp of products">{{sp.ten}}- {{sp.gia}}đồng</li>
+</ul>
